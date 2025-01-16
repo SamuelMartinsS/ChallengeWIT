@@ -1,0 +1,4 @@
+rootProject.name = 'calculatorAppChallenge'
+
+include ':module-rest'
+include ':module-calc'
