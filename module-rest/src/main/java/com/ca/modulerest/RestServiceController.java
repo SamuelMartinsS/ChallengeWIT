@@ -37,13 +37,13 @@ public class RestServiceController {
 			@RequestParam(name = "b", defaultValue = "0") BigDecimal bdSecond) {
 		Map<String,Object> mResponse = new HashMap<String,Object>();
 		try {
-			mResponse.put("First Value:", bdFirst);
-			mResponse.put("Second Value:", bdSecond);
-			mResponse.put("Sum:", calculatorService.addition(bdFirst, bdSecond));
+			mResponse.put("First Value", bdFirst);
+			mResponse.put("Second Value", bdSecond);
+			mResponse.put("Sum", calculatorService.addition(bdFirst, bdSecond));
 			return ResponseEntity.ok(mResponse);
 
 		}catch (Exception e) {
-			return ResponseEntity.unprocessableEntity().body("Error: " + e.getMessage());
+			return ResponseEntity.unprocessableEntity().body("Error " + e.getMessage());
 		}
 	}
 
@@ -53,13 +53,13 @@ public class RestServiceController {
 			@RequestParam(name = "b", defaultValue = "0") BigDecimal bdSecond) {
 		Map<String,Object> mResponse = new HashMap<String,Object>();
 		try {
-			mResponse.put("First Value:", bdFirst);
-			mResponse.put("Second Value:", bdSecond);
-			mResponse.put("Multiplication:", calculatorService.multiplication(bdFirst, bdSecond));
+			mResponse.put("First Value", bdFirst);
+			mResponse.put("Second Value", bdSecond);
+			mResponse.put("Multiplication", calculatorService.multiplication(bdFirst, bdSecond));
 			return ResponseEntity.ok(mResponse);
 
 		}catch (Exception e) {
-			return ResponseEntity.unprocessableEntity().body("Error: " + e.getMessage());
+			return ResponseEntity.unprocessableEntity().body("Error " + e.getMessage());
 		}
 	}
 
@@ -69,13 +69,13 @@ public class RestServiceController {
 			@RequestParam(name = "b", defaultValue = "0") BigDecimal bdSecond) {
 		Map<String,Object> mResponse = new HashMap<String,Object>();
 		try {
-			mResponse.put("First Value:", bdFirst);
-			mResponse.put("Second Value:", bdSecond);
-			mResponse.put("Division:", calculatorService.division(bdFirst, bdSecond));
+			mResponse.put("First Value", bdFirst);
+			mResponse.put("Second Value", bdSecond);
+			mResponse.put("Division", calculatorService.division(bdFirst, bdSecond));
 			return ResponseEntity.ok(mResponse);
 
 		}catch (Exception e) {
-			return ResponseEntity.unprocessableEntity().body("Error: " + e.getMessage());
+			return ResponseEntity.unprocessableEntity().body("Error " + e.getMessage());
 		}
 	}
 
@@ -85,13 +85,13 @@ public class RestServiceController {
 			@RequestParam(name = "b", defaultValue = "0") BigDecimal bdSecond) {
 		Map<String,Object> mResponse = new HashMap<String,Object>();
 		try {
-			mResponse.put("First Value:", bdFirst);
-			mResponse.put("Second Value:", bdSecond);
-			mResponse.put("Subraction:", calculatorService.subtraction(bdFirst, bdSecond));
+			mResponse.put("First Value", bdFirst);
+			mResponse.put("Second Value", bdSecond);
+			mResponse.put("Subraction", calculatorService.subtraction(bdFirst, bdSecond));
 			return ResponseEntity.ok(mResponse);
 
 		}catch (Exception e) {
-			return ResponseEntity.unprocessableEntity().body("Error: " + e.getMessage());
+			return ResponseEntity.unprocessableEntity().body("Error " + e.getMessage());
 		}	}
 
 }

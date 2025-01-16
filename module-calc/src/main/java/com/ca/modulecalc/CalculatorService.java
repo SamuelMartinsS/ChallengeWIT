@@ -13,7 +13,7 @@ public class CalculatorService {
     }
 
     public BigDecimal division(BigDecimal a, BigDecimal b) {
-        return a.divide(b, 10, RoundingMode.HALF_UP);
+        return a.divide(b, RoundingMode.HALF_UP);
     }
 
     public BigDecimal multiplication(BigDecimal a, BigDecimal b) {
