@@ -10,5 +10,5 @@ Springboot structure and rules.
 4. To create the jar file, use the following command, `./gradlew bootjar`
 5. The build is located at `/build/libs` and should have the following name, _**calculatorAppChallenge-0.0.1-SNAPSHOT**_
 6. To run the jar file, use the following command `java -jar <jar file>`
-7. The web app can be tested using the command `./gradlew test`, using browser or other tools like postman or cURL
+7. The web app can be tested using the following command `./gradlew test`, using browser or other tools like postman or cURL
 
